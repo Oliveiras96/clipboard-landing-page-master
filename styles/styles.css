@@ -1,0 +1,230 @@
+/* Global */
+
+* {
+    font-family: 'Bai Jamjuree', sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
+
+/* Global colors */
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    --light-grayish-blue: hsl(195, 15%, 95%);
+}
+
+.section-title {
+    font-size: 2rem;
+}
+
+.section-title, .subsection-title {   
+    font-weight: 600;
+    color: var(--dark-grayish-blue);
+}
+
+.section-description {
+    font-size: 1.125rem;
+    font-weight: 400;
+
+    color: var(--grayish-blue);
+}
+
+.download-button {
+    padding: 15px 0;
+    
+    font-weight: 600;
+    color: #fff;
+
+    border-radius:25px;
+    border: 0;
+    box-shadow: 0 0.15rem 0.25rem var(--dark-grayish-blue);
+}
+
+button.download-button:hover {
+    filter: drop-shadow(4px 4px 4px var(--grayish-blue)) contrast(150%);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.download-ios {
+    background: var(--strong-cyan);
+}
+
+.download-mac {
+    background: var(--light-blue);
+}
+
+footer {
+    width: 100%;
+    background: var(--light-grayish-blue);
+    position: absolute;
+}
+
+.menu-item {
+    color: var(--dark-grayish-blue);
+}
+
+.social > .fab {
+    font-size: 2rem;
+    color: var(--dark-grayish-blue);
+}
+
+.attribution {
+    font-size: 0.8rem;
+    color: var(--grayish-blue);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* End of Global */
+
+/* Device design */
+
+#page-header { 
+    width: 100%; 
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    
+    background: url(../images/bg-header-mobile.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo-image {
+    width: 7.81rem;
+    height: 7.81rem;
+
+    margin-top: 7.5rem;
+}
+
+.section-title, .subsection-title {   
+    width: 23.5rem;
+    padding: 0 1.875rem;
+    margin: auto;
+
+    text-align: center;
+}
+
+.subsection-title {
+    width: 100%;
+}
+
+.page-section > .content {
+    width: 21.6rem;
+    margin: auto;
+}
+
+.section-description {   
+    width: 100%;
+    padding: 1rem 0;
+
+    text-align: center;
+}
+
+/* download button styles */
+.download {
+    width: 100%;
+    margin: 1.875rem auto;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.download-button {
+    margin-bottom: 1.5625rem;
+}
+
+/* end of download button styles */
+
+.device-pic {
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.device-pic > img {
+    width: 21.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.workflow-icon > img {
+    width: 3.125rem;
+}
+
+.page-section {
+    margin-bottom: 150px;
+}
+
+/* partner brands section */
+.partner-brands-section {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 125px;
+}
+
+.partner-brands-section > img { 
+    padding: 2.5rem 0;
+
+}
+/* end of partner brands section */
+
+/* footer */
+.footer-logo  {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3.5rem 0;
+}
+
+.footer-logo > img {
+    width: 60px;
+    height: 60px;
+}
+
+.footer-menu {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+
+.menu-item {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.social {
+    width: 18rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin: 2rem auto;
+}
+
+/* end of Mobile design */
