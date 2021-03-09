@@ -5,6 +5,7 @@
 *.sketch
 
 style-guide.md
+README.md
 
 # Avoid accidental XD or Figma upload if you convert the design file
 #######################################################

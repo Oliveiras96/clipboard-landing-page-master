@@ -85,146 +85,332 @@ footer {
 
 /* End of Global */
 
+@media(max-width: 453px){
+    html {
+        font-size: 93.75%;
+    }
+}
+
+@media(max-width: 400px){
+    html {
+        font-size: 87.5%;
+    }
+}
+
 /* Device design */
 
-#page-header { 
-    width: 100%; 
-    height: 300px;
-
-    display: flex;
-    justify-content: center;
+@media (max-width: 600px) {
+    #page-header { 
+        width: 100%; 
+        height: 300px;
     
-    background: url(../images/bg-header-mobile.png);
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.logo-image {
-    width: 7.81rem;
-    height: 7.81rem;
-
-    margin-top: 7.5rem;
-}
-
-.section-title, .subsection-title {   
-    width: 23.5rem;
-    padding: 0 1.875rem;
-    margin: auto;
-
-    text-align: center;
-}
-
-.subsection-title {
-    width: 100%;
-}
-
-.page-section > .content {
-    width: 21.6rem;
-    margin: auto;
-}
-
-.section-description {   
-    width: 100%;
-    padding: 1rem 0;
-
-    text-align: center;
-}
-
-/* download button styles */
-.download {
-    width: 100%;
-    margin: 1.875rem auto;
+        display: flex;
+        justify-content: center;
+        
+        background: url(../images/bg-header-mobile.png);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     
-    display: flex;
-    flex-direction: column;
-}
-
-.download-button {
-    margin-bottom: 1.5625rem;
-}
-
-/* end of download button styles */
-
-.device-pic {
-    width: 100%;
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-}
-
-.device-pic > img {
-    width: 21.5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-.workflow-icon > img {
-    width: 3.125rem;
-}
-
-.page-section {
-    margin-bottom: 150px;
-}
-
-/* partner brands section */
-.partner-brands-section {
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-
-    margin-bottom: 125px;
-}
-
-.partner-brands-section > img { 
-    padding: 2.5rem 0;
-
-}
-/* end of partner brands section */
-
-/* footer */
-.footer-logo  {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 3.5rem 0;
-}
-
-.footer-logo > img {
-    width: 60px;
-    height: 60px;
-}
-
-.footer-menu {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-direction: column;
-}
-
-
-.menu-item {
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
-}
-
-.social {
-    width: 18rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    margin: 2rem auto;
+    .logo-image {
+        width: 7.81rem;
+        height: 7.81rem;
+    
+        margin-top: 7.5rem;
+    }
+    
+    .section-title, .subsection-title {   
+        width: 23.5rem;
+        padding: 0 1.875rem;
+        margin: auto;
+    
+        text-align: center;
+    }
+    
+    .subsection-title {
+        width: 100%;
+    }
+    
+    .page-section > .content {
+        width: 21.6rem;
+        margin: auto;
+    }
+    
+    .section-description {   
+        max-width: 365px;
+        margin: 0 auto;
+        padding: 1rem 0;
+    
+        text-align: center;
+    }
+    
+    /* download button styles */
+    .download {
+        width: 100%;
+        margin: 1.875rem auto;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .download-button {
+        margin-bottom: 1.5625rem;
+    }
+    
+    /* end of download button styles */
+    
+    .device-pic {
+        width: 100%;
+        display: flex;
+    
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .device-pic > img {
+        width: 21.5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    
+    .workflow-icon > img {
+        width: 3.125rem;
+    }
+    
+    .page-section {
+        margin-bottom: 150px;
+    }
+    
+    /* partner brands section */
+    .partner-brands-section {
+        display: flex;
+        flex-direction: column;
+    
+        justify-content: center;
+        align-items: center;
+    
+        margin-bottom: 125px;
+    }
+    
+    .partner-brands-section > img { 
+        padding: 2.5rem 0;
+    
+    }
+    /* end of partner brands section */
+    
+    /* footer */
+    .footer-logo  {
+        width: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        padding: 3.5rem 0;
+    }
+    
+    .footer-logo > img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .footer-menu {
+        width: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        flex-direction: column;
+    }
+    
+    .menu-item {
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .social {
+        width: 18rem;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        margin: 2rem auto;
+    }
 }
 
 /* end of Mobile design */
+
+/* Desktop version */
+@media (min-width: 601px) {
+    #page-header {
+        width: 100%;
+        
+        background: url(../images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #page-header > img {
+        margin: 150px auto 100px auto;
+        /* margin: 150px auto; */
+    }
+
+    .page-section {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 100px;
+    }
+
+    .page-section > .section-title {
+        font-size: 2.5rem;
+        margin: 0 0 1rem 0;
+    }
+
+    .content {
+        max-width: 625px;
+
+        text-align: center;
+
+        margin-bottom: 100px;
+    }
+
+    .download {
+        margin-top: 3rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .download-button {
+        width: 200px;
+        margin: 0 0.625rem;
+    }
+
+    .side-float {
+        margin: 400px 0;
+        max-width: 100%;
+    }
+
+    /* .device-pic {
+        margin-top: 100px;
+    } */
+
+    .side-float > .device-pic {
+        position: absolute;
+        left: -1.8rem;
+    }
+
+    .side-float > .device-pic > img {
+        width: 50vw;
+    }
+
+    .subsection-floated {
+        margin-top: 50px;
+        position: absolute;
+
+        left: 55vw;
+        
+        text-align: left;
+    }
+
+    .subsection-floated > .section-description {
+        width: 380px;
+        margin-bottom: 80px;
+    }
+
+    .subsection-floated > p {
+        line-height: 2rem;
+    }
+
+    .workflow-tools {
+        width: 80%;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .workflow-topic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .workflow-topic > p {
+        width: 400px;
+        text-align: center;
+    }
+
+    .partner-brands-section {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        margin: 150px 0;
+    }
+
+    footer {
+        
+        display: flex; 
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer > div {
+        margin: 0 10%;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    .footer-logo > img {
+        width: 50px;
+        margin: 3rem;
+    }
+
+    .footer-menu {
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .menu-item {
+        margin: 1rem 0.5rem;
+    }
+
+    .fab {
+        margin: 0 0.5rem;
+    }
+    
+    .attribution {
+        font-size: 0.8rem;
+        text-decoration: none;
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
